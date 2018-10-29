@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <NIMSDK/NIMSDK.h>
+
 @class WBNIMConfiguration;
+@class WBNIMAutoLoginData;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -20,6 +23,11 @@ NS_ASSUME_NONNULL_BEGIN
  @return WBNIMManager.
  */
 + (instancetype)shareManager;
+
+@property (nonatomic, strong, nullable) WBNIMAutoLoginData *currentLoginData;
+
+
+- (void)addLoginNoti;
 
 // MARK:注册SDK
 /**
@@ -42,12 +50,11 @@ NS_ASSUME_NONNULL_BEGIN
       completion:(NIMLoginHandler)completion;
 
 /**
- *  自动登录
- *
- *  @param loginData 自动登录参数
- *  @discussion 启动APP如果已经保存了用户帐号和令牌,建议使用这个登录方式,使用这种方式可以在无网络时直接打开会话窗口
+ 自动登录
+
+ @param account 账户
+ @param token n密码
  */
-- (void)wb_autoLogin:(NIMAutoLoginData *)loginData;
 - (void)wb_autoLogin:(NSString *)account
                token:(NSString *)token;
 
@@ -102,6 +109,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 
 @property (nonatomic, assign) BOOL fetchAttachmentAutomaticallyAfterReceiving;
+
+@end
+
+@interface WBNIMAutoLoginData : NSObject <NSCoding>
+
+@property (nonatomic,copy)  NSString *account;
+@property (nonatomic,copy)  NSString *token;
 
 @end
 

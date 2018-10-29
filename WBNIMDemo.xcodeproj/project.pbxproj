@@ -66,7 +66,7 @@
 		D00196C52160BCBD0048C70B /* NIMKitEmoticon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D00196C22160BCBA0048C70B /* NIMKitEmoticon.bundle */; };
 		D00196C62160BCBD0048C70B /* NIMDemoChartlet.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D00196C32160BCBC0048C70B /* NIMDemoChartlet.bundle */; };
 		D00196C72160BCBD0048C70B /* NIMKitResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D00196C42160BCBD0048C70B /* NIMKitResource.bundle */; };
-		D00196CB2160C4F10048C70B /* WBNIMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D00196CA2160C4F10048C70B /* WBNIMManager.m */; };
+		D0D28D1D2186F81E002CCB9C /* WBNIMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D28D1C2186F81E002CCB9C /* WBNIMManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -205,8 +205,8 @@
 		D00196C22160BCBA0048C70B /* NIMKitEmoticon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NIMKitEmoticon.bundle; sourceTree = "<group>"; };
 		D00196C32160BCBC0048C70B /* NIMDemoChartlet.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NIMDemoChartlet.bundle; sourceTree = "<group>"; };
 		D00196C42160BCBD0048C70B /* NIMKitResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NIMKitResource.bundle; sourceTree = "<group>"; };
-		D00196C92160C4F10048C70B /* WBNIMManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBNIMManager.h; sourceTree = "<group>"; };
-		D00196CA2160C4F10048C70B /* WBNIMManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBNIMManager.m; sourceTree = "<group>"; };
+		D0D28D1B2186F81E002CCB9C /* WBNIMManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBNIMManager.h; sourceTree = "<group>"; };
+		D0D28D1C2186F81E002CCB9C /* WBNIMManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBNIMManager.m; sourceTree = "<group>"; };
 		FEE5B9770D332FC2520E47DF /* Pods-WBNIMDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBNIMDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WBNIMDemo/Pods-WBNIMDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -593,8 +593,8 @@
 		D00196C82160C4E00048C70B /* WBNIMManager */ = {
 			isa = PBXGroup;
 			children = (
-				D00196C92160C4F10048C70B /* WBNIMManager.h */,
-				D00196CA2160C4F10048C70B /* WBNIMManager.m */,
+				D0D28D1B2186F81E002CCB9C /* WBNIMManager.h */,
+				D0D28D1C2186F81E002CCB9C /* WBNIMManager.m */,
 			);
 			path = WBNIMManager;
 			sourceTree = "<group>";
@@ -857,7 +857,7 @@
 				D00196C02160AEA30048C70B /* NTESChatroomMaker.m in Sources */,
 				D001967121609E810048C70B /* UIActionSheet+NTESBlock.m in Sources */,
 				D00196BD2160AE7F0048C70B /* NTESDemoFetchChatroomTask.m in Sources */,
-				D00196CB2160C4F10048C70B /* WBNIMManager.m in Sources */,
+				D0D28D1D2186F81E002CCB9C /* WBNIMManager.m in Sources */,
 				D00195F621607E2E0048C70B /* main.m in Sources */,
 				D00196842160A1840048C70B /* NTESSessionCustomContentConfig.m in Sources */,
 				D00195E821607E2D0048C70B /* AppDelegate.m in Sources */,
